@@ -5,10 +5,12 @@ import { Container } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "100vh",
+    height: "90vh",
     backgroundColor: theme.palette.primary.main,
     paddingTop: theme.spacing(5),
     color: "white",
+    position: "sticky",
+    top: 65,
     [theme.breakpoints.up("sm")]: {
       backgroundColor: 'white',
       color: 'black',
@@ -42,44 +44,46 @@ const useStyles = makeStyles((theme) => ({
 
 const Leftbar = () => {
   const classes = useStyles();
-  return <Container className={classes.container}>
-    <div className={classes.item}>
-      <Home className={classes.icon} />
-      <Typography className={classes.text}>Homepage</Typography>
-    </div>
-    <div className={classes.item}>
-      <Person className={classes.icon} />
-      <Typography className={classes.text}>Person</Typography>
-    </div>
-    <div className={classes.item}>
-      <List className={classes.icon} />
-      <Typography className={classes.text}>List</Typography>
-    </div>
-    <div className={classes.item}>
-      <PhotoCamera className={classes.icon} />
-      <Typography className={classes.text}>Camera</Typography>
-    </div>
-    <div className={classes.item}>
-      <PlayCircleOutline className={classes.icon} />
-      <Typography className={classes.text}>Play</Typography>
-    </div>
-    <div className={classes.item}>
-      <TabletMac className={classes.icon} />
-      <Typography className={classes.text}>Phone</Typography>
-    </div>
-    <div className={classes.item}>
-      <Bookmark className={classes.icon} />
-      <Typography className={classes.text}>Bookmark</Typography>
-    </div>
-    <div className={classes.item}>
-      <Settings className={classes.icon} />
-      <Typography className={classes.text}>Setting</Typography>
-    </div>
-    <div className={classes.item}>
-      <ExitToApp className={classes.icon} />
-      <Typography className={classes.text}>Exit</Typography>
-    </div>
-  </Container>
+  return (
+    <Container className={classes.container}>
+      <div className={classes.item}>
+        <Home className={classes.icon} />
+        <Typography className={classes.text}>Homepage</Typography>
+      </div>
+      <div className={classes.item}>
+        <Person className={classes.icon} />
+        <Typography className={classes.text}>Person</Typography>
+      </div>
+      <div className={classes.item}>
+        <List className={classes.icon} />
+        <Typography className={classes.text}>List</Typography>
+      </div>
+      <div className={classes.item}>
+        <PhotoCamera className={classes.icon} />
+        <Typography className={classes.text}>Camera</Typography>
+      </div>
+      <div className={classes.item}>
+        <PlayCircleOutline className={classes.icon} />
+        <Typography className={classes.text}>Play</Typography>
+      </div>
+      <div className={classes.item}>
+        <TabletMac className={classes.icon} />
+        <Typography className={classes.text}>Phone</Typography>
+      </div>
+      <div className={classes.item}>
+        <Bookmark className={classes.icon} />
+        <Typography className={classes.text}>Bookmark</Typography>
+      </div>
+      <div className={classes.item}>
+        <Settings className={classes.icon} />
+        <Typography className={classes.text}>Setting</Typography>
+      </div>
+      <div className={classes.item}>
+        <ExitToApp className={classes.icon} />
+        <Typography className={classes.text}>Exit</Typography>
+      </div>
+    </Container>
+  );
 };
 
 export default Leftbar;

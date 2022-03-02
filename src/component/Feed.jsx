@@ -11,16 +11,18 @@ const useStyles = makeStyles((theme) => ({
 
 const Feed = () => {
   const classes = useStyles();
-  return <Container className={classes.container}>
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
+  return (
+    <Container className={classes.container}>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
 
-  </Container>
+    </Container>
+  );
 };
 
 export default Feed;

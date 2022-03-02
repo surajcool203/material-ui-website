@@ -10,9 +10,9 @@ const useStyles = makeStyles((theme) => ({
     toolbar: {
         display: "relative",
         justifyContent: "space-between",
-        padding:theme.spacing(0,0,0,0),
-        
-        
+        padding: theme.spacing(0, 0, 0, 0),
+
+
     },
     logoLg: {
         display: 'none',
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up("sm")]: {
             display: "none",
         },
-    }, 
+    },
 
     searchButton: {
         marginRight: theme.spacing(2),
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const classes = useStyles({ open });
-    return <AppBar position="static">
+    return <AppBar position="sticky">
         <Toolbar className={classes.toolbar}>
             <Typography variant="h6" className={classes.logoLg}>
                 Developer
