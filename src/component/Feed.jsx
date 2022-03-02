@@ -4,7 +4,7 @@ import Post from './Post';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    padding: theme.spacing(5),
+    padding: theme.spacing(1),
   },
 }));
 
