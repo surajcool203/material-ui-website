@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     searchButton: {
         marginRight: theme.spacing(2),
         [theme.breakpoints.up("sm")]: {
-            display: 'none',
+            display: "none",
         },
     },
 
@@ -83,17 +83,15 @@ const Navbar = () => {
             <div className={classes.search}>
                 <Search />
                 <InputBase placeholder="Search..." className={classes.input} />
-                <Cancel className={classes.cancel} onclick={() => setOpen(false)} />
             </div>
             <div className={classes.icons}>
-                <Search className={classes.searchButton} onclick={() => setOpen(true)} />
                 <Badge badgeContent={4} color="secondary" className={classes.badge}>
                     <Mail color="action" />
                 </Badge>
                 <Badge badgeContent={3} color="secondary" className={classes.badge}>
                     <DoorbellRounded color="action" />
                 </Badge>
-                <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+                <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/3.jpg" />
             </div>
         </Toolbar>
     </AppBar>

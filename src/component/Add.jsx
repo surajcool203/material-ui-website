@@ -92,7 +92,7 @@ const Add = () => {
                     This is a success message!
                 </Alert>
             </Snackbar>
-        </Box >
+        </Box>
     );
 };
 
