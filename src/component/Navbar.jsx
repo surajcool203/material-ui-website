@@ -1,6 +1,6 @@
 import { AppBar, Avatar, Badge, Toolbar, Typography } from "@mui/material";
 import { alpha, InputBase, makeStyles } from "@material-ui/core";
-import { Cancel, DoorbellRounded, Search } from "@mui/icons-material";
+import { DoorbellRounded, Search } from "@mui/icons-material";
 import { Mail } from "@mui/icons-material";
 import { useState } from "react";
 
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
+    const [open] = useState(false);
     const classes = useStyles({ open });
     return <AppBar position="sticky">
         <Toolbar className={classes.toolbar}>
